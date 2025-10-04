@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <!-- Bootstrap 5 CSS from CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS for basic styling */
+        body {
+            font-family: sans-serif;
+            background-color: #f8f9fa; /* Light gray background */
+        }
+        .container {
+            margin-top: 50px;
+            text-align: center;
+        }
+        .btn-primary {
+            background-color: #007bff; /* Bootstrap primary color */
+            border-color: #007bff;
+        }
+        .btn-primary:hover {
+            background-color: #0069d9; /* Darker shade on hover */
+            border-color: #0062cc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mb-4">Hello, World!</h1>
+        <p class="lead">This is a simple web page created with HTML, Bootstrap, and JavaScript.</p>
+        <button type="button" class="btn btn-primary" id="helloButton">Say Hello</button>
+    </div>
+
+    <!-- Bootstrap 5 JavaScript (Popper.js and Bootstrap JS) from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script>
+        // JavaScript for button click event
+        document.getElementById('helloButton').addEventListener('click', function() {
+            alert('Hello from JavaScript!');
+        });
+    </script>
+</body>
+</html>
